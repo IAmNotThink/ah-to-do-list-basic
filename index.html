@@ -12,6 +12,27 @@
         <button onclick="addTask()">Add Task</button>
         <ul id="taskList"></ul>
 
-        <script type="module" src="/main.js"></script>
+        <script>
+            function addTask() {
+                console.log("button clicked");
+                const taskinput = document.getElementById("taskInput");
+                const tasklist = document.getElementById("taskList");
+
+                if (taskinput.value !== "") {
+                    const li = document.createElement("li");
+                    li.textContent = taskInput.value;
+
+                    const deleteButton = document.createElement("button");
+                    deleteButton.textContent = "Delete";
+                    deleteButton.onclick = function () {
+                        tasklist.removeChild(i);
+                    };
+
+                    li.appendChild(deleteButton);
+                    tasklist.appendChild(li);
+                    taskInput.value = "";
+                }
+            }
+        </script>
     </body>
 </html>

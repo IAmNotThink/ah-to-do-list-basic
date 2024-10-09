@@ -1,22 +1,22 @@
-function addTask() {
+function addtask() {
   console.log("button clicked");
-  const taskInput = document.getElementById("taskInput");
-  const taskList = document.getElementById("taskList");
+  const taskinput = document.getElementById("taskInput");
+  const tasklist = document.getElementById("taskList");
 
-  if (taskInput.value !== "") {
+  if (taskinput.value !== "") {
     const li = document.createElement("li");
-    li.textContent = taskInput.value;
+    li.textcontent = taskinput.value;
 
-    const deleteButton = document.createElement("button");
-    deleteButton.textContent = "Delete";
-    deleteButton.onclick = function () {
-      taskList.removeChild(i);
+    const deletebutton = document.createElement("button");
+    deletebutton.textcontent = "delete";
+    deletebutton.onclick = function () {
+      tasklist.removeChild(i);
     };
 
-    li.appendChild(deleteButton);
-    taskList.appendChild(li);
-    taskInput.value = "";
+    li.appendChild(deletebutton);
+    tasklist.appendChild(li);
+    taskinput.value = "";
   }
 }
 
-export default addTask;
+export default addtask;
