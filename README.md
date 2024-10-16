@@ -8,3 +8,4 @@
 - Black background
 - White text & buttons
 - Find a cool font to use
+- How to add border around the text itself
