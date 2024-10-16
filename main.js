@@ -19,4 +19,10 @@ function addtask() {
   }
 }
 
+function handlekeypress(event) {
+  if (event.key === "enter") {
+    addtask();
+  }
+}
+
 export default addtask;
