@@ -25,4 +25,4 @@ function handlekeypress(event) {
   }
 }
 
-export default addtask;
+export default addtask; handlekeypress;
