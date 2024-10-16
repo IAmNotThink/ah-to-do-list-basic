@@ -15,6 +15,7 @@
                     type="text"
                     id="taskInput"
                     placeholder="Enter a new task"
+                    onkeypress="handlekeypress(event)"
                 />
                 <button onclick="addTask()">Add Task</button>
                 <ul id="taskList"></ul>
@@ -41,6 +42,13 @@
                     taskInput.value = "";
                 }
             }
+
+            function handlekeypress(event) {
+            if (event.key === "Enter") {
+            addTask();
+                }
+            }
+
         </script>
     </body>
 </html>
