@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Monsieur+La+Doulaise&display=swap');
+
 body{
     margin: 0;
     padding: 0;
@@ -7,7 +9,7 @@ body{
 .main-section {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 32;
     color: white;
 
     /* border: solid red 1px; */
@@ -17,10 +19,36 @@ body{
 
 .app-body h1 {
     font-size: 64px;
+    font-family: "Dancing Script", cursive;
 }
 
 .app-body {
     height: fit-content;
     width: fit-content;
     /* border: solid red 1px; */
+}
+
+.app-body button {
+    font-family: "Monsieur La Doulaise", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.app-body li {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+.app-body ul {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    gap: 4px;
+    border: 1px solid red;
+    max-width: 350px;
+}
+
+.app-body ul button {
+    height: fit-content;
 }
